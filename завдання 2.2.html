@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма 2</title>
+    <style>
+        .dash {
+  height: 10px;
+  background: repeating-linear-gradient(-60deg, #555 0, #555 2px, transparent 1px, transparent 10px);
+  width: 320px;
+  border: 1px solid;
+  position: relative;
+  left: -10px;
+  top: 20px;
+  background-color: rgb(243, 193, 132);
+}
+.dash1 {
+  height: 10px;
+  background: repeating-linear-gradient(-60deg, #555 0, #555 2px, transparent 1px, transparent 10px);
+  width: 320px;
+  border: 1px solid;
+  position: relative;
+  left: -10px;
+  top: 20px;
+  background-color: rgb(243, 193, 132);
+}
+.dash2 {
+  height: 500px;
+  background: repeating-linear-gradient(-60deg, #555 0, #555 2px, transparent 1px, transparent 10px);
+  width: 10px;
+  border: 1px solid;
+  position: absolute;
+  left: -10px;
+  top: 32px;
+  background-color: rgb(243, 193, 132);
+}
+.dash3{
+  height: 500px;
+  background: repeating-linear-gradient(-60deg, #555 0, #555 2px, transparent 1px, transparent 10px);
+  width: 10px;
+  border: 1px solid;
+  position: absolute;
+  left: 300px;
+  top: 32px;
+  background-color: rgb(243, 193, 132);
+}
+.fon{
+    background-color: rgb(231, 195, 195);
+    position: relative;
+    left: 20px;
+}
+.upbox{
+    border: 1px solid;
+    width: 300px;
+    height: 500px;
+    background-color: rgb(252, 233, 208);
+    position: relative;
+    top: 20px;
+}
+.label1{
+    position: relative;
+    left: 10px;
+    top: 10px;
+    color: #5a5a5a;
+}
+.label2{
+    position: relative;
+    left: 10px;
+    top: 30px;
+    color: #5a5a5a;
+}
+.input{
+    background-color: rgb(252, 233, 208);
+    border: 0px;
+    height: 20px;
+    width: 275px;
+    position: relative;
+    top: 5px;
+    
+}
+textarea {
+  background: transparent;
+  line-height: 20px;
+  
+}
+
+.wrapper{
+    width: fit-content;
+    height: fit-content;
+    background: repeating-linear-gradient( to bottom, #aeabab, transparent 1px, transparent 1px, transparent 20px );
+    width: 275px;
+    height: 200px;
+    position: relative;
+    top: 45px;
+    left: 10px;
+    border: 0px;
+    
+}
+.text{
+    position: relative;
+    left: 10px;
+    top: 40px;
+    color: #5a5a5a;
+}
+.but{
+    position: relative;
+    left: 10px;
+    width: 230px;
+    height: 30px;
+    border: 0px;
+    top: 70px;
+    background-color:  rgb(185, 21, 111);
+    color: white;
+}
+.block1{
+    border-bottom: 1px solid #5a5a5a;
+    position: absolute;
+    left: 10px;
+    top: 87px;
+    width: 280px;
+}
+.block2{
+    border-bottom: 1px solid #5a5a5a;
+    position: absolute;
+    left: 10px;
+    top: 147px;
+    width: 280px;
+}
+    </style>
+</head>
+<body class="fon">
+    <div class="dash"></div>
+    <div class="upbox">
+    <label class="label1">
+        Ваше ім'я<br>
+        <input type="text" name="name" required class="input" >
+    </label><br>
+        <label class="label2">
+            Ваш Email<br>
+            <input type="email" name="email" required class="input" pattern="(?=.*[a-z])(?=.*[A-Z]).{2,}">
+
+        </label>
+        <p class="text">Ваше повідомлення</p>
+        <textarea name="adres" id="" cols="30" rows="10" class="wrapper" required></textarea>  
+        <button type="submit" class="but">Відправити повідомлення</button>   
+    </div>
+    <div class="block1"></div>
+    <div class="block2"></div>
+    <div class="dash1"></div>
+    <div class="dash2"></div>
+    <div class="dash3"></div>
+</body>
+</html>
