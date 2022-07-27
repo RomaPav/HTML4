@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма 5</title>
+    <style>
+        .fon{
+            background-color: rgb(124, 200, 252);
+        }
+        .block{
+            border: 1px;
+            border-color: white;
+            background-color: white;
+            width: 295px;
+            height: 400px;
+            position: relative;
+            left: 800px;
+            top: 90px;
+        }
+        .block1{
+            border: 1px;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(245, 192, 94);
+            position: relative;
+            top: 50px;
+            left: 100px;
+        } 
+        .block2{
+            border: 1px;
+            width: 50px;
+            height: 50px;
+            background-color: rgb(222, 103, 226);
+            position: relative;
+            top: 30px;
+            left: 120px;
+        } 
+        .text{
+            color: rgb(122, 122, 255);
+            position: relative;
+            left: 80px;
+            top: -20px;
+        } 
+        .input{
+            height: 30px;
+            width: 200px;
+            position: relative;
+            left: 50px;
+            top: 70px;
+            border: 4px;
+            border-top: 1px;
+        }
+        .input1{
+            height: 30px;
+            width: 200px;
+            position: relative;
+            left: 50px;
+            top: 80px;
+            border: 4px;
+            border-top: 1px; 
+        }
+        .block3{
+            border-bottom: 1px solid rgb(122, 122, 255);
+            position: absolute;
+            left: 50px;
+            top: 225px;
+            width: 200px;
+
+        }
+        .block4{
+            border-bottom: 1px solid rgb(122, 122, 255);
+            position: absolute;
+            left: 50px;
+            top: 265px;
+            width: 200px;
+        }
+        .but{
+            width: 200px;
+            height: 30px;
+            background-color: rgb(122, 122, 255);
+            position: relative;
+            left: 50px;
+            top: 130px;
+            color: white;
+        }
+    </style>
+</head>
+<body class="fon">
+    <div class="block">
+        <div class="block1"></div>
+        <div class="block2"></div>
+        <big class="text">Вхід на сайт</big><br>
+        <input type="email" name="email" required placeholder="Email" class="input">
+        <div class="block3"></div>
+        <input type="password" name="password" required placeholder="Пароль" class="input1" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}">
+        <div class="block4"></div>
+        <button type="submit" class="but">Вхід</button>
+    </div>
+</body>
+</html>
