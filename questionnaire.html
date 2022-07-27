@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>questionnaire</title>
+    <style>
+        .back{
+            background-color: bisque;
+        }
+        .input{
+            width: 150px;
+            height: 20px;
+        }
+        .input:valid{
+            background-color: rgb(71, 226, 71);
+        }
+        .input:invalid{
+            background-color: rgb(241, 143, 143);
+        }
+        .form{
+            width: 330px;
+            padding: auto;
+            margin-left: 750px;
+            box-shadow: 20px;
+            bottom:auto;
+            font: optional;
+            background-color: rgb(196, 165, 165);
+        }
+        .texta{
+            background-size: unset;
+        }
+        .but{
+            position: relative;
+            left: 750px;
+        }
+        .but:hover{
+            background-color: rgb(59, 226, 95);
+        }
+        .but:focus{
+            background-color: rgb(99, 66, 219);
+        }
+        .but:active{
+            background-color: rgb(233, 89, 89);
+        }
+        .link{
+            text-decoration: none;
+        }
+        .text1{
+            position: relative;
+            left:45px;
+        }
+        .text2{
+            position: relative;
+            left:80px;
+        }
+    </style>
+</head>
+<body class="back">
+    <form>
+        <fieldset class="form" >
+            <legend>
+                <h2 class="text1">Особиста інформація:</h2>
+            </legend>
+            <label><big>Ваша фамілія:</big><br>
+            <input type="text" name="surname" placeholder="Фамілія" class="input" required> <br><br></label>
+            <label><big>Ваше ім'я:</big><br>
+            <input type="text" name="name" placeholder="Ім'я" class="input" required></label> <br><br>
+            <label><big>Ваш вік:</big><br>
+            <input type="number" name="age" placeholder="Вік" class="input" required></label> <br><br>
+            <label><big>Телефон:</big><br>
+            <input type="tel" name="tel" pattern="[0-9]{10}" placeholder="Телефон" class="input" required></label> <br><br>
+            <label><big>Ел.почта:</big><br>
+            <input type="email" name="email" placeholder="Ел.почта" class="input" autocomplete="off" required></label> <br><br>
+            <label><big>Посилання на акаунт в соц.мережі:</big><br>
+            <input type="url" name="url" placeholder="Соц.мережа" class="input" pattern="[https://a-z\d\.]" required></label> <br><br>
+            <label><big>Пароль:</big><br>
+            <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"  placeholder="Пароль" class="input" required></label>
+        </fieldset><br><br>
+        <fieldset class="form">
+            <legend>
+                <h2 class="text2">Опитування:</h2>
+            </legend>
+            <label>
+                <big>Чи маєте Ви середню освіту?</big><br>
+                <input type="radio" name="radio">Так<br>
+                <input type="radio" name="radio">Ні<br><br>
+            </label>
+            <label>
+                <big>Чи маєте Ви вищю освіту?</big><br>
+                <input type="radio" name="educ">Так<br>
+                <input type="radio" name="educ">Ні<br><br>
+            </label>
+            <label>
+                <big>Які мови програмування Ви знаєте?</big><br>
+                <input type="checkbox">C++<br>
+                <input type="checkbox">Python<br>
+                <input type="checkbox">JS<br>
+                <input type="checkbox">PHP<br>
+                <input type="checkbox">HTML<br>
+                <input type="checkbox">React<br>
+                <input type="checkbox">C#<br><br>
+            </label>
+            <lqbel>
+                <big>Виберіть браузер яким Ви користуєтесь?</big><br>
+                <input list="browsers" name="browser">
+                <datalist id="browsers">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist><br><br>
+            </lqbel>
+            <label>
+                <big>Який рівень англійської мови у Вас?</big><br>
+                <input type="radio" name="color">A1<br>
+                <input type="radio" name="color">A2<br>
+                <input type="radio" name="color">B1<br>
+                <input type="radio" name="color">B2<br>
+                <input type="radio" name="color">C1<br>
+                <input type="radio" name="color">C2<br><br>
+            </label>
+            <label>
+                <big>Чи є увас досвід роботи Вас?</big><br>
+                <input type="radio" name="check">Так<br>
+                <input type="radio" name="check">Ні<br><br>
+            </label>
+            <label>
+                <big>Виберіть приємний колір для Вас?</big><br>
+                <input type="color"><br><br>
+            </label>
+            <label>
+                <big>Введіть сьогоднішню дату?</big><br>
+                <input type="date"><br><br>
+            </label>
+            <label>
+                <big>Введіть сьогоднішню дату?</big><br>
+                <select name="city">
+                    <option value="1">Житомир</option>
+                    <option value="2">Київ</option>
+                    <option value="3">Львів</option>
+                    <option value="3">Чернівці</option>
+                    <option value="3">Ужгород</option>
+                    <option value="3">Вінниця</option>
+                    <option value="3">Хмельницький</option>
+                </select><br><br>
+            </label>
+            <label>
+                <big>Чому Ви хочете навчатися в нас?</big><br>
+                <textarea name="" id="" cols="35" rows="10" class="texta" spellcheck="false" maxlength="300"></textarea>
+                </select>
+            </label><br><br>
+            <label>
+                <big>Введіть відсоток своєї впевненості в своїх можливостях?</big><br>
+                <input oninput="out.value=(inik.value)" type="range" min="0" max="100" value="0" id="inik">
+                <output id="out">100</output><br><br>
+            </label>
+            <label>
+                Meter
+                <meter min="0" max="100" low="25" high="75" optimum="90" value="85"></meter><br>
+            </label>
+            <label>Progres
+                <progress min="0" max="100" value="45"></progress>
+            </label>
+        </fieldset><br>
+        <button type="submit" class="but" style="padding: 5px 10px;">Відпраити</button>
+        <button type="reset" class="but" style="padding: 5px 10px;">Очистити</button>
+        <button type="reset" class="but" style="padding: 5px 12px;"><a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1600506847&extra_1=s%7Cc%7C515922865595%7Ce%7Cfacebook%7C&placement=&creative=515922865595&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1600506847%26adgroupid%3D60825662376%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D1012871%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjw2_OWBhDqARIsAAUNTTHbLLSb4GkNpCk0Wg1yoUfBHos5VXG6lTvXmJ5V4JIYipiZbgw0nnMaAllrEALw_wcB" target="_blank" class="link">Facebook</a></button>
+        <button type="reset" class="but" style="padding: 5px 10px;"><a href="https://www.instagram.com/" class="link" target="_blank">Instagram</a></button>
+        
+        
+    </form>
+</body>
+</html>
