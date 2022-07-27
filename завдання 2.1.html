@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Форма 1</title>
+    <style>
+        .dash {
+  height: 30px;
+  background: repeating-linear-gradient(-60deg, #555 0, #555 2px, transparent 1px, transparent 7px);
+  width: 300px;
+  border: 1px solid;
+}
+.fon{
+    background-color: rgb(219, 219, 219);
+    position: relative;
+    left: 20px;
+}
+.upbox{
+    border: 1px solid;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    left: 0px;
+}
+.label1{
+    position: relative;
+    left: 10px;
+    top: -70px;
+}
+.input{
+    background-color: rgb(219, 219, 219);
+    border: 0px;
+    height: 20px;
+}
+.textarea{
+    position: absolute;
+}
+textarea {
+  background: transparent;
+  line-height: 20px;
+  
+}
+
+.wrapper{
+    width: fit-content;
+    height: fit-content;
+    background: repeating-linear-gradient( to bottom, #aeabab, transparent 1px, transparent 1px, transparent 20px );
+    width: 295px;
+    height: 200px;
+    position: relative;
+    top: 50px;
+    border: 0px;
+}
+.centerbox{
+    border: 1px solid;
+    width: 300px;
+    height: 255px;
+    position: relative;
+    top: -40px;
+}
+.text{
+    position: relative;
+    left: 20px;
+    top: -200px;
+}
+.lowbox{
+    border: 1px solid;
+    width: 300px;
+    height: 100px;
+    position: relative;
+    top: -40px;
+}
+.input1{
+    position: relative;
+    left: 70px;
+    width: 222px;
+    height: 25px;
+    border: 0px;
+    top: 1px;
+    background-color: rgb(219, 219, 219);
+}
+.input2{
+    position: relative;
+    left: 70px;
+    width: 222px;
+    height: 25px;
+    border: 0px;
+    top: 2px;
+    background-color: rgb(219, 219, 219);
+}
+.but{
+    position: relative;
+    left: 7px;
+    width: 200px;
+    height: 30px;
+    border: 0px;
+    top: 15px;
+    background-color:  rgb(219, 219, 219);
+}
+.block{
+    border: 1;
+    width: 70px;
+    height: 30px;
+    background-color: #555;
+    position: relative;
+    top: -85px;
+}
+.block1{
+    border: 1;
+    width: 70px;
+    height: 30px;
+    background-color: #555;
+    position: relative;
+    top: -80px;
+}
+.block2{
+    border: 1;
+    width: 70px;
+    height: 30px;
+    background-color: #555;
+    position: relative;
+    top: -75px;
+}
+    </style>
+</head>
+<body class="fon">
+    <div class="dash"></div>
+    <div class="upbox"></div>
+    <label class="label1">
+        Ім'я<br>
+        <input type="text" name="name" required class="input" >
+    </label><br>
+    <div class="centerbox">
+        <textarea name="adres" id="" cols="30" rows="10" class="wrapper" required></textarea>
+        <big class="text">Адреса</big>
+    </div>
+    <div class="lowbox">
+        <input type="tel" name="tel" required pattern="(?=.*\d).{10}" class="input1" placeholder="Телнфон"><br>
+        <input type="email" name="email" class="input2" placeholder="Email" required>
+        <button type="submit" class="but">Відправити</button>
+        <div class="block"></div>
+        <div class="block1"></div>
+        <div class="block2"></div>
+    </div>
+</body>
+</html>
